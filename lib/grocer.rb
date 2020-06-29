@@ -23,11 +23,10 @@ def consolidate_cart(cart)
     if(!find_item_by_name_in_collection(item[:item], receipt))
       receipt.push(item)
       index = receipt.length
-      receipt[index][:count] = 1 
+      receipt[index][:count]
       binding.pry
     else
-      puts "hello"
-      #receipt[item][:count]+=1 
+      receipt[item][:count]+=1 
        
     end
   end
