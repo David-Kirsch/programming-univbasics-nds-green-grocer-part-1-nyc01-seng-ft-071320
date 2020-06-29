@@ -4,10 +4,8 @@ def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   #
   # Consult README for inputs and outputs
-   binding.pry
-  if(collection.include? name)
-   
-    return name
+   collection.each do |item, value|
+     binding.pry
   end
 
 end
