@@ -30,6 +30,7 @@ def consolidate_cart(cart)
        
     end
   end
+  receipt
 end
 
 
