@@ -22,6 +22,7 @@ def consolidate_cart(cart)
   cart.each do |item|
     item.each_with_object({}) do |(key, value), final|
       i = 0 
+      binding.pry
       while(i < receipt.length) do
             binding.pry
         if(receipt[i][:item] != nil)
