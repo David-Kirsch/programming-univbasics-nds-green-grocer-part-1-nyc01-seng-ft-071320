@@ -26,7 +26,7 @@ def consolidate_cart(cart)
       receipt[index][:count] = 1 
       binding.pry
     else
-      receipt[item][:count]+=1 
+      #receipt[item][:count]+=1 
        
     end
   end
