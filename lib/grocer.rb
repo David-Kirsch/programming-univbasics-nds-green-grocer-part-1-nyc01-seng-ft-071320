@@ -21,16 +21,12 @@ def consolidate_cart(cart)
   receipt = []
   cart.each do |item|
     item.each_with_object({}) do |(key, value), itemDetail|
-       if(find_item_by_name_in_collection())
+       if(!find_item_by_name_in_collection(value, receipt))
+         receipt.push(item)
+         binding.pry
+       end
     end
   end
- 
-      
-
-    end
-    
-  end
-  
 end
 
 
