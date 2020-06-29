@@ -20,6 +20,7 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   receipt = []
   cart.each_with_object({}) do |(key, value), final|
+
     binding.pry
   end
   
