@@ -21,19 +21,8 @@ def consolidate_cart(cart)
   receipt = []
   cart.each do |item|
     item.each_with_object({}) do |(key, value), final|
-      i = 0 
-      binding.pry
-      while(i < receipt.length) do
-            binding.pry
-        if(receipt[i][:item] != nil)
-           receipt[i][:count]+=1 
-        else
-          receipt.push(cart[i])
-          
-        end
-        
-      end
-        
+      
+
     end
     
   end
