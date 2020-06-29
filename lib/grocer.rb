@@ -20,8 +20,8 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   receipt = []
   while(x < cart.length) do
-    if(receipt[cart[x][:item]] == nil)
-      receipt.push(cart[x][:item])
+    if(receipt[cart[:item]] == nil)
+      receipt.push(cart[:item])
       binding.pry
     end
   
