@@ -21,10 +21,17 @@ def consolidate_cart(cart)
   receipt = []
   cart.each do |item|
     item.each_with_object({}) do |(key, value), final|
-      if(receipt[key].include?(key))
-        receipt.push(item)
-      end
+      i = 0 
+      while(i < receipt.length) do
+        if(receipt[i][:item] != nil)
+           receipt[i][:count]+=1 
+        else
+          receipt.push(cart[i])
           binding.pry
+        end
+        
+      end
+        
     end
     
   end
