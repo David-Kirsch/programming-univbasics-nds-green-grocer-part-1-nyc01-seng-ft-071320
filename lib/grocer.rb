@@ -26,13 +26,11 @@ def consolidate_cart(cart)
     else
       receipt.each do |receipt_item|
         if(receipt_item[:item] == item[:item])
-          binding.pry
           receipt_item[:count]+=1 
         end
     end
   end
 end
-binding.pry
   receipt
 end
 
