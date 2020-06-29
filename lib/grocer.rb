@@ -20,7 +20,11 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   receipt = []
   cart.each do |item|
-    item.each_with_object({}) do |(key, value), final|
+    item.each_with_object({}) do |(key, value), itemDetail|
+       if(find_item_by_name_in_collection())
+    end
+  end
+ 
       
 
     end
