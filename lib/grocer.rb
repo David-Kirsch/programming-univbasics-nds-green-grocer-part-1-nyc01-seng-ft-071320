@@ -23,6 +23,7 @@ def consolidate_cart(cart)
     if(receipt == nil)
     binding.pry
   end
+  end
 
 end
 
