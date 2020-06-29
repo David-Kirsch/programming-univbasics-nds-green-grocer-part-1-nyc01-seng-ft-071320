@@ -21,7 +21,7 @@ def consolidate_cart(cart)
   receipt = []
   while(x < cart.length) do
     if(receipt[cart[:item]] == nil)
-      receipt.push(cart[:item])
+
       binding.pry
     end
   
